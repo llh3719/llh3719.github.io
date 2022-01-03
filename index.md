@@ -7,9 +7,9 @@
 ## 涉及主要操作点
 
 -   [网关配置](#网关配置)
--   [DNS 配置](#DNS配置)
--   [iptables 配置](#iptables配置)
--   [trojan 客户端配置](#trojan客户端配置)
+-   [DNS配置](#DNS配置)
+-   [iptables配置](#iptables配置)
+-   [trojan客户端配置](#trojan客户端配置)
 
 ## 趟坑开始,接下来是全流程的每一步详细操作
 
@@ -84,9 +84,9 @@
     若没有该字段则添加`net.ipv4.ip_forward = 1`  
     命令`sysctl -p`可使其立即生效
 
-### DNS 配置
+### DNS配置
 
-DNS 配置需要用到 dnsmasq 和 chinadns-ng 这两个工具  
+DNS配置需要用到 dnsmasq 和 chinadns-ng 这两个工具  
 dnsmasq 在 centos8 中应会自带,若没有则手动安装即可  
 chinadns-ng 需要后续我们自行安装
 
@@ -144,7 +144,7 @@ chinadns-ng 需要后续我们自行安装
     [[ChinaDNS] 无污染的智能路由 DNS 折腾记](https://moe.best/tutorial/chinadns.html#ChinaDNS)  
     [使用 ChinaDNS-NG 和 dnsmasq 对域名解析进行智能分流](https://huangyunsong.com/2020/3/chinadns-ng-dnsmasq/)
 
-### iptables 配置
+### iptables配置
 
 iptables 的配置有一定的学习门槛,建议参考文章如下:  
 [iptables 详解](https://www.zsythink.net/archives/1199)  
@@ -210,7 +210,7 @@ iptables 的配置有一定的学习门槛,建议参考文章如下:
     若要自行修改配置,需要注意的点是在 OUTPUT 链上确保有类似于上述命令的过滤  
     避免形成回环
 
-### trojan 客户端配置
+### trojan客户端配置
 
 8.  **trojan 客户端安装**
 
